@@ -13,3 +13,8 @@ $ git branch
 $
 
 #create ne an alias for git
+
+"C:\Program Files (x86)\Gow\bin\sed.exe"
+C:\Program Files (x86)\Gow\bin
+
+# this sum bs
