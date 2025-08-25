@@ -5,6 +5,7 @@ broker = BrokerAdapter()
 live_broker = BrokerAdapter(mode=False)
 paper_broker = BrokerAdapter(mode=True)
 
-print(paper_broker.place_order("BTC/USD", "buy", 1.0, price=400))
-# print(live_broker.get_price('BTC/USD'))
 
+# print(live_broker.get_price('BTC/USD'))
+order_id = paper_broker.place_order("USD", 'Market', 'Sell', 1.100, price=None)['id']
+print(paper_broker.cancel_order(order_id))
